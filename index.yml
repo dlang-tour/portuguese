@@ -1,0 +1,9 @@
+title: Dlang Tour
+start: welcome/welcome-to-d
+repo: dlang-tour/portuguese
+ordering:
+- welcome
+#- basics
+#- gems
+#- multithreading
+#- vibed
