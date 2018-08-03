@@ -59,8 +59,9 @@ void main()
     writeln("Hello World!");
 
     // Um exemplo para programadores exprientes:
-    // Dadas três arrays, sem alocar memória nova,
-    // ordene todas as arrays por ordem numérica.
+    // Dadas três arrays, sem alocar memória
+    // nova, ordene todas as arrays por ordem
+    // numérica.
     int[] arr1 = [4, 9, 7];
     int[] arr2 = [5, 2, 1, 10];
     int[] arr3 = [6, 8, 3];
