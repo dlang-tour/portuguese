@@ -5,30 +5,31 @@ Bem-vindo ao tour interativo da *linguagem de programação D*.
 {{#dmanmobile}}
 
 Esta tour dá uma visão geral desta __poderosa__ e __expressiva__
-linguagem que compila diretamente para __eficiente__ código __nativo__ de máquina.
+linguagem que compila diretamente para código de máquina __nativo__
+__eficiente__.
 
 {{/dmanmobile}}
 
-### O que é D?
+### O que é o D?
 
-D é o culminar de _décadas de experiência implementando compiladores_
-para diversas linguagens e tem um grande número de
-[funcionalidades únicas](http://dlang.org/overview.html):
+D é o culminar de _décadas de experiência em implementação de compiladores_
+para múltiplas linguagens. Esta linguagem tem um grande número de
+[características únicas](http://dlang.org/overview.html):
 
 {{#dmandesktop}}
 
-- Construção de _alto nível_ para uma modelagem poderosa
+- construção em _high level_ que proporciona um alto poder de modelação
 - _alta performance_, linguagem compilada
-- tipagem estática
-- interface direta para APIs do sistema operacional e hardware
+- suporta definições estáticas
+- interface direta com APIs do sistema operativo e hardware
 - tempo de compilação incrivelmente rápido
-- permite programação com memory-safe (SafeD)
-- _manutenível_, código _fácil de entender_
-- baixa curva de aprendizado (sintaxe semelhante a C, Java e outras linguagens)
-- compatível com interface binário em C
-- compatibilidade limitada com interface binário em C++
-- multi-paradigma (imperativo, estruturado, orientado a objetos, genérica, programação funcional pura, e mesmo assembly)
-- prevenção de erros embutido (contratos, testes uniários)
+- permite programação em modo memory-safe (SafeD)
+- _manutenção fácil_, código _fácil de entender_
+- baixa curva de aprendizagem (sintaxe semelhante a C, Java e outras linguagens)
+- compatível com a interface binária do C
+- compatibilidade limitada com a interface binária do C++
+- multi-paradigma (imperativa, estruturada, orientada a objetos, genérica, programação funcional pura, e mesmo assembly)
+- deteção de error automática (contratos, _unittests_)
 
 ... e muitas outras [funcionalidades](http://dlang.org/overview.html).
 
@@ -36,13 +37,15 @@ para diversas linguagens e tem um grande número de
 
 ### Sobre o tour
 
-Cada seção vem com um código-fonte de exemplo que pode ser modificado e usado
-para experimentar as funcionalides da linguagem D.
-Clique no botão run (ou `Ctrl-enter`) para compilar e executa-ló.
+Cada secção inclui um código exemplo que pode ser modificado e usado para
+experimentar as características da linguagem D.
+Para compilar o código e executá-lo, basta clicar no botão "Run"
+(ou `Ctrl-enter`).
 
-### Contribuindo
+### Contribuições
 
-Este tour tem o [código aberto](https://github.com/dlang-tour) e ficamos felizes
+O tour da linguagem D é [_open source_](https://github.com/dlang-tour).
+Para contribuir basta abrir um _pull request_
 com pull requests para torná-lo melhor.
 
 ## {SourceCode}
@@ -50,9 +53,21 @@ com pull requests para torná-lo melhor.
 ```d
 import std.stdio;
 
-// Vamos começar!
 void main()
 {
+    // Vamos começar!
     writeln("Hello World!");
+
+    // Um exemplo para programadores exprientes:
+    // Dadas três arrays, sem alocar memória
+    // nova, ordene todas as arrays por ordem
+    // numérica.
+    int[] arr1 = [4, 9, 7];
+    int[] arr2 = [5, 2, 1, 10];
+    int[] arr3 = [6, 8, 3];
+    sort(chain(arr1, arr2, arr3));
+    writefln("%s\n%s\n%s\n", arr1, arr2, arr3);
+    // Para aprender mais sobre isto, veja a
+    // página "Algoritmos de Range" em "Gemas"
 }
 ```

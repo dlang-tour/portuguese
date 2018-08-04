@@ -1,6 +1,5 @@
 title: Bem-vindo
 ordering:
 - welcome-to-d
-#- install-d-locally
-#- run-d-program-locally
-#- links-documentation
+- install-d-locally
+- run-d-program-locally
