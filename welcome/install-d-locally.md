@@ -24,7 +24,7 @@ ser necessário permissões de administrador.
 Informação mais detalhada encontra-se na
 [documentação do _script_ de instalação](https://dlang.org/install.html).
 
-## Conguração do editor
+## Configuração do editor
 
 Para usar o D não é necessário nenhum IDE muito sofisticado, o que é muito raro.
 Contudo, programar em D é melhor quando usamos o nosso editor favorito. Existem
